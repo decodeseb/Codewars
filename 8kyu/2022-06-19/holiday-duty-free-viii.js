@@ -6,8 +6,11 @@
 
 //Parameters: normPrice: high street price --> discount: duty-free discount --> hol : cost of holiday
 //Return: an integer representing the amount of bottles necessary to cover the cost of holiday after the discount has been applied.
+//Examples: dutyFree(12, 50, 1000) -> 166 and dutyFree(24, 35, 3000) -> 357
 //Pseudo-code: first, we find out how much each bottle saves after the discount has been applied to the normal price. Then we divie the cost of the
 //holiday by the price saved per bottle
+
 function dutyFree(normPrice, discount, hol){
     return Math.floor(hol / (normPrice * discount/100));
   }
+  
