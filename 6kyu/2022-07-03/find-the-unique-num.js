@@ -10,4 +10,10 @@ function findUniq(arr) {
     //Pseudo-code: Loop through the array and return the value that is different from the previous one.
     return Number( arr.filter(num => arr.indexOf(num) === arr.lastIndexOf(num)) );
     }
-    
+
+
+//REFRACTOR - The function could be best re-written as:
+
+function findUniq(arr) {
+    return arr.find(num => arr.indexOf(num) === arr.lastIndexOf(num));
+  }
