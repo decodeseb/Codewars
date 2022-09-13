@@ -16,7 +16,7 @@ output:
 Array's length > 2. */
 
 
-//Solution #1
+//First solution
 
 function toCsvText(array) {
     array.forEach((elem, index) => {
@@ -24,3 +24,10 @@ function toCsvText(array) {
     })
    return array.join('\n');
  }
+
+//Refactored solution : Using the join method instead of the long form version initially used.
+
+function toCsvText(array) {
+    return array.join('\n')
+ }
+ 
