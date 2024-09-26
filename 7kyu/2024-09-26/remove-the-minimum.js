@@ -14,7 +14,7 @@ Examples
 
 
 function removeSmallest(numbers) {
-    if(numbers === [])
+    if(!numbers)
       return []
     else {
       let minVal = Math.min(...numbers) 
