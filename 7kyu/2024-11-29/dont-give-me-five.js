@@ -27,5 +27,5 @@ function dontGiveMeFive(start, end)
       arr.push(i)
   }
   
-  return arr === [] ? 0 : arr.length;
+  return arr == [] ? 0 : arr.length;
 }
